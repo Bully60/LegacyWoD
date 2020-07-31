@@ -40,19 +40,24 @@ char const* GitRevision::GetFullDatabase()
     return _FULL_DATABASE;
 }
 
-#define _PACKAGENAME "LegacyWoD"
+#if PLATFORM == PLATFORM_WINDOWS
+#  ifdef _WIN64
+#    define PLATFORM_STR "Win64"
+#  else
+#    define PLATFORM_STR "Win32"
+#  endif
+#elif PLATFORM == PLATFORM_APPLE
+#  define PLATFORM_STR "MacOSX"
+#elif PLATFORM == PLATFORM_INTEL
+#  define PLATFORM_STR "Intel"
+#else // TRINITY_PLATFORM_UNIX
+#  define PLATFORM_STR "Unix"
+#endif
 
 char const* GitRevision::GetFullVersion()
 {
-#if PLATFORM == PLATFORM_WINDOWS
-# ifdef _WIN64
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Win64, " _BUILD_DIRECTIVE ")";
-# else
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Win32, " _BUILD_DIRECTIVE ")";
-# endif
-#else
-    return _PACKAGENAME " rev. " VER_PRODUCTVERSION_STR " (Unix, " _BUILD_DIRECTIVE ")";
-#endif
+  return "LegacyWoD rev. " VER_PRODUCTVERSION_STR
+    " (" PLATFORM_STR ")";
 }
 
 char const* GitRevision::GetCompanyNameStr()

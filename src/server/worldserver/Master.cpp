@@ -420,14 +420,14 @@ int Master::Run()
     sLog->outInfo(LOG_FILTER_WORLDSERVER, "%s (worldserver-daemon)", GitRevision::GetFullVersion());
     sLog->outInfo(LOG_FILTER_WORLDSERVER, "<Ctrl-C> to stop.\n");
     
-    sLog->outInfo("╔╗─────╔══╗────────╔╗─╔╗     ╔══╗────────╚╝─────────╔╗─");
-    sLog->outInfo("║║─────║╔╗║────────║║─║║     ║╔╗║────────╔╗────────╔╝╚╗");
-    sLog->outInfo("║║─╔══╗║╚╝║╔══╗╔══╗║╚═╝║     ║╚╝║╔═╗╔══╗─║║╔══╗╔══╗╚╗╔╝");
-    sLog->outInfo("║║─║║═╣╚═╗║║╔╗║║╔═╝╚═╗╔╝     ║╔═╝║╔╝║╔╗║─║║║║═╣║╔═╝─║║─");
-    sLog->outInfo("║╚╗║║═╣╔═╝║║╔╗║║╚═╗╔═╝║─     ║║──║║─║╚╝║╔╝║║║═╣║╚═╗─║╚╗");
-    sLog->outInfo("╚═╝╚══╝╚══╝╚╝╚╝╚══╝╚══╝─     ╚╝──╚╝─╚══╝╚═╝╚══╝╚══╝─╚═╝");
-    sLog->outInfo("            Product Legacy Group Project");
-    sLog->outInfo("    Project Warlords of Draenor build version 6.2.3 20886\n");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "╔╗─────╔══╗────────╔╗─╔╗     ╔══╗────────╚╝─────────╔╗─");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "║║─────║╔╗║────────║║─║║     ║╔╗║────────╔╗────────╔╝╚╗");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "║║─╔══╗║╚╝║╔══╗╔══╗║╚═╝║     ║╚╝║╔═╗╔══╗─║║╔══╗╔══╗╚╗╔╝");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "║║─║║═╣╚═╗║║╔╗║║╔═╝╚═╗╔╝     ║╔═╝║╔╝║╔╗║─║║║║═╣║╔═╝─║║─");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "║╚╗║║═╣╔═╝║║╔╗║║╚═╗╔═╝║─     ║║──║║─║╚╝║╔╝║║║═╣║╚═╗─║╚╗");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "╚═╝╚══╝╚══╝╚╝╚╝╚══╝╚══╝─     ╚╝──╚╝─╚══╝╚═╝╚══╝╚══╝─╚═╝");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "            Product Legacy Group Project");
+    sLog->outInfo(LOG_FILTER_WORLDSERVER, "    Project Warlords of Draenor build version 6.2.3 20886\n");
 
     /// worldserver PID file creation
     std::string pidfile = ConfigMgr::GetStringDefault("PidFile", "");

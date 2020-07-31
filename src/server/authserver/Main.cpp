@@ -150,14 +150,14 @@ extern int main(int argc, char **argv)
     sLog->outInfo(LOG_FILTER_AUTHSERVER, "<Ctrl-C> to stop.\n");
     sLog->outInfo(LOG_FILTER_AUTHSERVER, "Using configuration file %s.", cfg_file);
 
-    sLog->outInfo("╔╗─────╔══╗────────╔╗─╔╗     ╔══╗────────╚╝─────────╔╗─");
-    sLog->outInfo("║║─────║╔╗║────────║║─║║     ║╔╗║────────╔╗────────╔╝╚╗");
-    sLog->outInfo("║║─╔══╗║╚╝║╔══╗╔══╗║╚═╝║     ║╚╝║╔═╗╔══╗─║║╔══╗╔══╗╚╗╔╝");
-    sLog->outInfo("║║─║║═╣╚═╗║║╔╗║║╔═╝╚═╗╔╝     ║╔═╝║╔╝║╔╗║─║║║║═╣║╔═╝─║║─");
-    sLog->outInfo("║╚╗║║═╣╔═╝║║╔╗║║╚═╗╔═╝║─     ║║──║║─║╚╝║╔╝║║║═╣║╚═╗─║╚╗");
-    sLog->outInfo("╚═╝╚══╝╚══╝╚╝╚╝╚══╝╚══╝─     ╚╝──╚╝─╚══╝╚═╝╚══╝╚══╝─╚═╝");
-    sLog->outInfo("            Product Legacy Group Project");
-    sLog->outInfo("    Project Warlords of Draenor build version 6.2.3 20886\n");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "╔╗─────╔══╗────────╔╗─╔╗     ╔══╗────────╚╝─────────╔╗─");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "║║─────║╔╗║────────║║─║║     ║╔╗║────────╔╗────────╔╝╚╗");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "║║─╔══╗║╚╝║╔══╗╔══╗║╚═╝║     ║╚╝║╔═╗╔══╗─║║╔══╗╔══╗╚╗╔╝");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "║║─║║═╣╚═╗║║╔╗║║╔═╝╚═╗╔╝     ║╔═╝║╔╝║╔╗║─║║║║═╣║╔═╝─║║─");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "║╚╗║║═╣╔═╝║║╔╗║║╚═╗╔═╝║─     ║║──║║─║╚╝║╔╝║║║═╣║╚═╗─║╚╗");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "╚═╝╚══╝╚══╝╚╝╚╝╚══╝╚══╝─     ╚╝──╚╝─╚══╝╚═╝╚══╝╚══╝─╚═╝");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "            Product Legacy Group Project");
+    sLog->outInfo(LOG_FILTER_AUTHSERVER, "    Project Warlords of Draenor build version 6.2.3 20886\n");
 
     sLog->outWarn(LOG_FILTER_AUTHSERVER, "%s (Library: %s)", OPENSSL_VERSION_TEXT, SSLeay_version(SSLEAY_VERSION));
 
